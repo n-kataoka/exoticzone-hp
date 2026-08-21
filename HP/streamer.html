@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STREAMER | Exotic Zone</title>
+<meta name="description" content="Exotic Zone所属のHi-G MEMBER、NEW-G MEMBERをご紹介します。">
+<link rel="icon" type="image/png" href="images/logo_mark.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DotGothic16&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="noise-overlay" aria-hidden="true"></div>
+<div class="cursor-spotlight" aria-hidden="true"></div>
+<a href="ad-partner.html" class="floating-ad-banner" aria-label="広告パートナー募集"><img src="images/floating_banner.png" alt="広告パートナー募集"></a>
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-x" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
+  <symbol id="icon-youtube" viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.15a2.9 2.9 0 0 0-2-2C18.9 4 12 4 12 4s-6.9 0-8.55.45a2.9 2.9 0 0 0-2 2C1 8.5 1 12 1 12s0 3.5.45 5.15a2.9 2.9 0 0 0 2 2C5.1 20 12 20 12 20s6.9 0 8.55-.45a2.9 2.9 0 0 0 2-2C23 15.5 23 12 23 12z"/><path d="M9.75 15.02 15.5 12 9.75 8.98v6.04z" fill="#0a0d12"/></symbol>
+  <symbol id="icon-twitch" viewBox="0 0 24 24"><path d="M2.149 0 .537 4.119v16.836h5.731V24h3.224l3.045-3.045h4.657L23.463 14.6V0zm1.612 1.612h18.089v11.567l-3.582 3.582h-5.731l-3.045 3.045v-3.045H3.761zm4.836 3.582v6.447h1.612V5.194zm5.731 0v6.447h1.612V5.194z"/></symbol>
+  <symbol id="icon-tiktok" viewBox="0 0 24 24"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+  <symbol id="icon-discord" viewBox="0 0 24 24"><path d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.045-.32 13.58.099 18.058a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.076.076 0 0 0-.04.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.055c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.331c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.418 2.157-2.418 1.21 0 2.176 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419zm7.974 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.418 2.157-2.418 1.21 0 2.176 1.094 2.157 2.418 0 1.334-.946 2.419-2.157 2.419Z"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo_wordmark_white.png" alt="Exotic Zone" class="logo-full">
+    </a>
+    <nav class="main-nav">
+      <a href="about.html">ABOUT</a>
+      <a href="streamer.html" class="active">STREAMER</a>
+      <a href="news.html">NEWS</a>
+      <a href="company.html">COMPANY</a>
+      <a href="contact.html" class="btn-contact magnetic">CONTACT</a>
+    </nav>
+    <button class="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="page-content">
+  <div class="page-title">
+    <h1>STREAMER</h1>
+  </div>
+
+  <section class="streamer-section">
+    <div class="container">
+      <h2 class="member-group-title">Hi-G MEMBER</h2>
+      <div class="hi-g-grid">
+
+        <div class="hi-g-card reveal">
+          <img class="card-img" src="images/hi-g_shinori.jpg" alt="SHINORI">
+          <span class="rank-tag">Hi-G</span>
+          <div class="card-info">
+            <div class="name">SHINORI</div>
+            <div class="sns">
+              <a href="https://x.com/shinori_spt" target="_blank" rel="noopener" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+              <a href="https://www.youtube.com/@shinori_spt" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#icon-youtube"></use></svg></a>
+              <a href="https://www.twitch.tv/shinori_spt" target="_blank" rel="noopener" aria-label="Twitch"><svg><use href="#icon-twitch"></use></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hi-g-card reveal">
+          <img class="card-img" src="images/hi-g_baruko.jpg" alt="BARUKO">
+          <span class="rank-tag">Hi-G</span>
+          <div class="card-info">
+            <div class="name">BARUKO</div>
+            <div class="sns">
+              <a href="https://x.com/baruko_dayo" target="_blank" rel="noopener" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+              <a href="https://www.youtube.com/@barukochan" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#icon-youtube"></use></svg></a>
+              <a href="https://www.twitch.tv/barukodayo" target="_blank" rel="noopener" aria-label="Twitch"><svg><use href="#icon-twitch"></use></svg></a>
+              <a href="https://www.tiktok.com/@barukodayo" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#icon-tiktok"></use></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hi-g-card reveal">
+          <img class="card-img" src="images/hi-g_mark.png" alt="MARK">
+          <span class="rank-tag">Hi-G</span>
+          <div class="card-info">
+            <div class="name">MARK</div>
+            <div class="sns">
+              <a href="https://x.com/Mark_nishikori" target="_blank" rel="noopener" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hi-g-card reveal">
+          <img class="card-img" src="images/hi-g_kanako_takatsuki.png" alt="KANAKO TAKATSUKI">
+          <span class="rank-tag">Hi-G</span>
+          <div class="card-info">
+            <div class="name">KANAKO TAKATSUKI</div>
+            <div class="sns">
+              <a href="https://x.com/Kanako_tktk" target="_blank" rel="noopener" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+              <a href="https://www.tiktok.com/@kanako_tktk" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#icon-tiktok"></use></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hi-g-card reveal">
+          <img class="card-img" src="images/hi-g_tsukimi.png" alt="TSUKIMI">
+          <span class="rank-tag">Hi-G</span>
+          <div class="card-info">
+            <div class="name">TSUKIMI</div>
+            <div class="sns">
+              <a href="https://x.com/TryVII_Tsukimi" target="_blank" rel="noopener" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hi-g-card reveal">
+          <img class="card-img" src="images/hi-g_osa_yumenokuni.jpeg" alt="夢の国おさ">
+          <span class="rank-tag">Hi-G</span>
+          <div class="card-info">
+            <div class="name">夢の国おさ</div>
+            <div class="sns">
+              <a href="https://x.com/OSA_yumenokuni" target="_blank" rel="noopener" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hi-g-card reveal">
+          <img class="card-img" src="images/hi-g_taida_wao.jpeg" alt="たいだだよー">
+          <span class="rank-tag">Hi-G</span>
+          <div class="card-info">
+            <div class="name">たいだだよー</div>
+            <div class="sns">
+              <a href="https://x.com/taida_wao" target="_blank" rel="noopener" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hi-g-card reveal">
+          <img class="card-img" src="images/hi-g_aoharudayooo.jpeg" alt="あおはる">
+          <span class="rank-tag">Hi-G</span>
+          <div class="card-info">
+            <div class="name">あおはる</div>
+            <div class="sns">
+              <a href="https://x.com/AoHarudayooo" target="_blank" rel="noopener" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hi-g-card reveal">
+          <img class="card-img" src="images/hi-g_professiona1_n.jpeg" alt="ニョス">
+          <span class="rank-tag">Hi-G</span>
+          <div class="card-info">
+            <div class="name">ニョス</div>
+            <div class="sns">
+              <a href="https://x.com/Professiona1_N" target="_blank" rel="noopener" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="member-group-title">NEW-G MEMBER</h2>
+      <div class="new-g-grid">
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/mtrkdayooo" target="_blank" rel="noopener">
+            <img src="images/new-g_marika.jpg" alt="茉莉花">
+          </a>
+          <div class="name">茉莉花</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Nyakurooo" target="_blank" rel="noopener">
+            <img src="images/new-g_nyakuro.jpg" alt="にゃくろ">
+          </a>
+          <div class="name">にゃくろ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/rukiruki_ki" target="_blank" rel="noopener">
+            <img src="images/new-g_ruki.jpg" alt="瑠輝/ruki">
+          </a>
+          <div class="name">瑠輝/ruki</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/juniorsport0504" target="_blank" rel="noopener">
+            <img src="images/new-g_junisupo.jpg" alt="じゅにスポ">
+          </a>
+          <div class="name">じゅにスポ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/mitubati_8910" target="_blank" rel="noopener">
+            <img src="images/new-g_mitubati_8910.jpeg" alt="蜂二十一時 リュウ">
+          </a>
+          <div class="name">蜂二十一時 リュウ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/chanmichichan" target="_blank" rel="noopener">
+            <img src="images/new-g_chanmichi.jpg" alt="ちゃんみち">
+          </a>
+          <div class="name">ちゃんみち</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/mi_yu_0x0" target="_blank" rel="noopener">
+            <img src="images/new-g_miyu.jpg" alt="兎雛みゆ">
+          </a>
+          <div class="name">兎雛みゆ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/merino_ora" target="_blank" rel="noopener">
+            <img src="images/new-g_meno-ora.jpg" alt="芽里乃おら">
+          </a>
+          <div class="name">芽里乃おら</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/takurusu8" target="_blank" rel="noopener">
+            <img src="images/new-g_takurusu.jpg" alt="たくるす">
+          </a>
+          <div class="name">たくるす</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/waichanzz" target="_blank" rel="noopener">
+            <img src="images/new-g_waichanzz.jpeg" alt="ワイです">
+          </a>
+          <div class="name">ワイです</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Belle_Kisaki_25" target="_blank" rel="noopener">
+            <img src="images/new-g_belle_kisaki_25.jpeg" alt="煌咲ベル@Vsinger">
+          </a>
+          <div class="name">煌咲ベル@Vsinger</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/kururugi_ritsu" target="_blank" rel="noopener">
+            <img src="images/new-g_kururugi_ritsu.jpeg" alt="枢木リツ">
+          </a>
+          <div class="name">枢木リツ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/pochitent" target="_blank" rel="noopener">
+            <img src="images/new-g_pochitent.jpeg" alt="ぽちっとてんか">
+          </a>
+          <div class="name">ぽちっとてんか</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Shiroinu_Hakuto" target="_blank" rel="noopener">
+            <img src="images/new-g_shiroinu_hakuto.jpeg" alt="白犬 はくと">
+          </a>
+          <div class="name">白犬 はくと</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/yagamiririka" target="_blank" rel="noopener">
+            <img src="images/new-g_yagamiririka.jpeg" alt="八神りりか">
+          </a>
+          <div class="name">八神りりか</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/chanmarust?s=11" target="_blank" rel="noopener">
+            <img src="images/new-g_chanmarust.jpeg" alt="まる">
+          </a>
+          <div class="name">まる</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/nonteya_vt" target="_blank" rel="noopener">
+            <img src="images/new-g_nonteya_vt.jpeg" alt="のんてゃ">
+          </a>
+          <div class="name">のんてゃ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Siesuta_gaba" target="_blank" rel="noopener">
+            <img src="images/new-g_siesuta_gaba.jpeg" alt="架城シエスタ">
+          </a>
+          <div class="name">架城シエスタ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/nadegata_0112" target="_blank" rel="noopener">
+            <img src="images/new-g_nadegata_0112.jpeg" alt="なで肩">
+          </a>
+          <div class="name">なで肩</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/rau_uteru" target="_blank" rel="noopener">
+            <img src="images/new-g_rau_uteru.jpeg" alt="らうてる">
+          </a>
+          <div class="name">らうてる</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/amasawa_dayo" target="_blank" rel="noopener">
+            <img src="images/new-g_amasawa_dayo.jpeg" alt="天沢りん@V実況者">
+          </a>
+          <div class="name">天沢りん@V実況者</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/cafeaulait_777_" target="_blank" rel="noopener">
+            <img src="images/new-g_cafeaulait_777_.jpeg" alt="かふぇちゃんだお">
+          </a>
+          <div class="name">かふぇちゃんだお</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/hurai_kanai" target="_blank" rel="noopener">
+            <img src="images/new-g_hurai_kanai.jpeg" alt="カナイ">
+          </a>
+          <div class="name">カナイ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/SlToTl" target="_blank" rel="noopener">
+            <img src="images/new-g_sltotl.jpeg" alt="中川しと">
+          </a>
+          <div class="name">中川しと</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/peimame" target="_blank" rel="noopener">
+            <img src="images/new-g_peimame.jpeg" alt="peimame">
+          </a>
+          <div class="name">peimame</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/_Tchi1" target="_blank" rel="noopener">
+            <img src="images/new-g__tchi1.jpeg" alt="KETE">
+          </a>
+          <div class="name">KETE</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/kuu_xx__" target="_blank" rel="noopener">
+            <img src="images/new-g_kuu_xx__.jpeg" alt="くちゃみする朝活生活">
+          </a>
+          <div class="name">くちゃみする朝活生活</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Unagrm" target="_blank" rel="noopener">
+            <img src="images/new-g_unagrm.jpeg" alt="うなのなの">
+          </a>
+          <div class="name">うなのなの</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/mocha_smtk" target="_blank" rel="noopener">
+            <img src="images/new-g_mocha_smtk.jpeg" alt="霜月もか">
+          </a>
+          <div class="name">霜月もか</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/amouminami" target="_blank" rel="noopener">
+            <img src="images/new-g_amouminami.jpeg" alt="天羽 みなみ">
+          </a>
+          <div class="name">天羽 みなみ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/soboti36" target="_blank" rel="noopener">
+            <img src="images/new-g_soboti36.jpeg" alt="祖母ち">
+          </a>
+          <div class="name">祖母ち</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/M4vle" target="_blank" rel="noopener">
+            <img src="images/new-g_m4vle.jpeg" alt="天神まぶる">
+          </a>
+          <div class="name">天神まぶる</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Ashimamur4" target="_blank" rel="noopener">
+            <img src="images/new-g_ashimamur4.jpeg" alt="あるばいとしまむら">
+          </a>
+          <div class="name">あるばいとしまむら</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/_mechayowai" target="_blank" rel="noopener">
+            <img src="images/new-g__mechayowai.jpeg" alt="ミナシキ">
+          </a>
+          <div class="name">ミナシキ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/tabe1o" target="_blank" rel="noopener">
+            <img src="images/new-g_tabe1o.jpeg" alt="氷織りん">
+          </a>
+          <div class="name">氷織りん</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/yyyak1yyy" target="_blank" rel="noopener">
+            <img src="images/new-g_yyyak1yyy.jpeg" alt="あきーちょ">
+          </a>
+          <div class="name">あきーちょ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/rupiuzki" target="_blank" rel="noopener">
+            <img src="images/new-g_rupiuzki.jpeg" alt="兎月るぴ">
+          </a>
+          <div class="name">兎月るぴ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Kashima_Sen" target="_blank" rel="noopener">
+            <img src="images/new-g_kashima_sen.jpeg" alt="鹿島茜">
+          </a>
+          <div class="name">鹿島茜</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Onigiri_MoguV" target="_blank" rel="noopener">
+            <img src="images/new-g_onigiri_moguv.jpeg" alt="御握利もぐ">
+          </a>
+          <div class="name">御握利もぐ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/gothicghost63" target="_blank" rel="noopener">
+            <img src="images/new-g_gothicghost63.jpeg" alt="ノヴァリス ノスタルジー">
+          </a>
+          <div class="name">ノヴァリス ノスタルジー</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/yoikura_karin" target="_blank" rel="noopener">
+            <img src="images/new-g_yoikura_karin.jpeg" alt="宵倉かりん">
+          </a>
+          <div class="name">宵倉かりん</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Sak1Ni" target="_blank" rel="noopener">
+            <img src="images/new-g_sak1ni.jpeg" alt="さきにぃ">
+          </a>
+          <div class="name">さきにぃ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/shinoka_aoi_322" target="_blank" rel="noopener">
+            <img src="images/new-g_shinoka_aoi_322.jpeg" alt="紫乃華 葵思">
+          </a>
+          <div class="name">紫乃華 葵思</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/x__ixi__x" target="_blank" rel="noopener">
+            <img src="images/new-g_x__ixi__x.jpeg" alt="黒苺みるく">
+          </a>
+          <div class="name">黒苺みるく</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Ryo__Yuzuki" target="_blank" rel="noopener">
+            <img src="images/new-g_ryo__yuzuki.jpeg" alt="唯月りょう">
+          </a>
+          <div class="name">唯月りょう</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/ui_0u0_" target="_blank" rel="noopener">
+            <img src="images/new-g_ui_0u0_.jpeg" alt="雪咲ぅぃ">
+          </a>
+          <div class="name">雪咲ぅぃ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Maki_Hmr" target="_blank" rel="noopener">
+            <img src="images/new-g_maki_hmr.jpeg" alt="焔真葵">
+          </a>
+          <div class="name">焔真葵</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Shizu777_" target="_blank" rel="noopener">
+            <img src="images/new-g_shizu777_.jpeg" alt="スーパーゴミ子">
+          </a>
+          <div class="name">スーパーゴミ子</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/chapihara" target="_blank" rel="noopener">
+            <img src="images/new-g_chapihara.jpeg" alt="ちゃぴはら">
+          </a>
+          <div class="name">ちゃぴはら</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/amanatu_ren" target="_blank" rel="noopener">
+            <img src="images/new-g_amanatu_ren.jpeg" alt="甘夏蓮">
+          </a>
+          <div class="name">甘夏蓮</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/RoS1160" target="_blank" rel="noopener">
+            <img src="images/new-g_ros1160.jpeg" alt="sora">
+          </a>
+          <div class="name">sora</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/RiLuk7" target="_blank" rel="noopener">
+            <img src="images/new-g_riluk7.jpeg" alt="RiLu_k">
+          </a>
+          <div class="name">RiLu_k</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/yuidareyanen" target="_blank" rel="noopener">
+            <img src="images/new-g_yuidareyanen.jpeg" alt="水瀬ゆい">
+          </a>
+          <div class="name">水瀬ゆい</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/shiratonao" target="_blank" rel="noopener">
+            <img src="images/new-g_shiratonao.jpeg" alt="白兎なお">
+          </a>
+          <div class="name">白兎なお</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/nanako700_" target="_blank" rel="noopener">
+            <img src="images/new-g_nanako700_.jpeg" alt="ななこ700">
+          </a>
+          <div class="name">ななこ700</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/nemuimurime" target="_blank" rel="noopener">
+            <img src="images/new-g_nemuimurime.jpeg" alt="眠依むりめ">
+          </a>
+          <div class="name">眠依むりめ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/rui_gamecreator" target="_blank" rel="noopener">
+            <img src="images/new-g_rui_gamecreator.jpeg" alt="Ruiゲーム実況×動画クリエイター×40歳からの自分磨き">
+          </a>
+          <div class="name">Ruiゲーム実況×動画クリエイター×40歳からの自分磨き</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/kuro_natsume_V" target="_blank" rel="noopener">
+            <img src="images/new-g_kuro_natsume_v.jpeg" alt="紅狼なつめ">
+          </a>
+          <div class="name">紅狼なつめ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/aika__ruri" target="_blank" rel="noopener">
+            <img src="images/new-g_aika__ruri.jpeg" alt="愛鹿るり">
+          </a>
+          <div class="name">愛鹿るり</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/_kamijyoutouma" target="_blank" rel="noopener">
+            <img src="images/new-g__kamijyoutouma.jpeg" alt="上条冬真">
+          </a>
+          <div class="name">上条冬真</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/ruonrl_0i1i" target="_blank" rel="noopener">
+            <img src="images/new-g_ruonrl_0i1i.jpeg" alt="るおん">
+          </a>
+          <div class="name">るおん</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/yukko_twitch" target="_blank" rel="noopener">
+            <img src="images/new-g_yukko_twitch.jpeg" alt="ゆっこ">
+          </a>
+          <div class="name">ゆっこ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Jenodo_DQX" target="_blank" rel="noopener">
+            <img src="images/new-g_jenodo_dqx.jpeg" alt="宮村綴存">
+          </a>
+          <div class="name">宮村綴存</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/awasedashi001" target="_blank" rel="noopener">
+            <img src="images/new-g_awasedashi001.jpeg" alt="おおすぎ">
+          </a>
+          <div class="name">おおすぎ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/nenemu_nemuri" target="_blank" rel="noopener">
+            <img src="images/new-g_nenemu_nemuri.jpeg" alt="寧眠ねむり 5/30新衣装お披露目">
+          </a>
+          <div class="name">寧眠ねむり 5/30新衣装お披露目</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/deus0515" target="_blank" rel="noopener">
+            <img src="images/new-g_deus0515.jpeg" alt="でうす">
+          </a>
+          <div class="name">でうす</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Maria_x_x_" target="_blank" rel="noopener">
+            <img src="images/new-g_maria_x_x_.jpeg" alt="華凪マリア Discord:dolpxim">
+          </a>
+          <div class="name">華凪マリア Discord:dolpxim</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/hanakago_rino" target="_blank" rel="noopener">
+            <img src="images/new-g_hanakago_rino.jpeg" alt="花籠リノ新人Vstreamer">
+          </a>
+          <div class="name">花籠リノ新人Vstreamer</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/commander_4645" target="_blank" rel="noopener">
+            <img src="images/new-g_commander_4645.jpeg" alt="Commander中佐@VTuber">
+          </a>
+          <div class="name">Commander中佐@VTuber</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/kokonoe_0723" target="_blank" rel="noopener">
+            <img src="images/new-g_kokonoe_0723.jpeg" alt="九重なつみ">
+          </a>
+          <div class="name">九重なつみ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/suzu_dayoo_o" target="_blank" rel="noopener">
+            <img src="images/new-g_suzu_dayoo_o.jpeg" alt="愛宮すず">
+          </a>
+          <div class="name">愛宮すず</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/megumegu327327" target="_blank" rel="noopener">
+            <img src="images/new-g_megumegu327327.jpeg" alt="ゴリラ">
+          </a>
+          <div class="name">ゴリラ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/popi_p1" target="_blank" rel="noopener">
+            <img src="images/new-g_popi_p1.jpeg" alt="みぽピ">
+          </a>
+          <div class="name">みぽピ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/onebouneco" target="_blank" rel="noopener">
+            <img src="images/new-g_onebouneco.jpeg" alt="そらネコ">
+          </a>
+          <div class="name">そらネコ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Imotoshi1005" target="_blank" rel="noopener">
+            <img src="images/new-g_imotoshi1005.jpeg" alt="イモトシ Vstreamer">
+          </a>
+          <div class="name">イモトシ Vstreamer</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Creampunchi" target="_blank" rel="noopener">
+            <img src="images/new-g_creampunchi.jpeg" alt="くりいむぱんch">
+          </a>
+          <div class="name">くりいむぱんch</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/neru_147" target="_blank" rel="noopener">
+            <img src="images/new-g_neru_147.jpeg" alt="紫星ねる">
+          </a>
+          <div class="name">紫星ねる</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/mikan_nyan25" target="_blank" rel="noopener">
+            <img src="images/new-g_mikan_nyan25.jpeg" alt="猫水みかん">
+          </a>
+          <div class="name">猫水みかん</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Rilphie_seal" target="_blank" rel="noopener">
+            <img src="images/new-g_rilphie_seal.jpeg" alt="りるふぃ 清楚なあざらし">
+          </a>
+          <div class="name">りるふぃ 清楚なあざらし</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Mame____Suna" target="_blank" rel="noopener">
+            <img src="images/new-g_mame____suna.jpeg" alt="枝豆と砂肝">
+          </a>
+          <div class="name">枝豆と砂肝</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/momomilibica" target="_blank" rel="noopener">
+            <img src="images/new-g_momomilibica.jpeg" alt="桃梅リビカ">
+          </a>
+          <div class="name">桃梅リビカ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/akichaaa__" target="_blank" rel="noopener">
+            <img src="images/new-g_akichaaa__.jpeg" alt="あきちゃ">
+          </a>
+          <div class="name">あきちゃ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/TanYoshida" target="_blank" rel="noopener">
+            <img src="images/new-g_tanyoshida.jpeg" alt="汰鳥ヨシダ">
+          </a>
+          <div class="name">汰鳥ヨシダ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/UraR1_chan" target="_blank" rel="noopener">
+            <img src="images/new-g_urar1_chan.jpeg" alt="日和ゆらり">
+          </a>
+          <div class="name">日和ゆらり</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/ito_ittoito277" target="_blank" rel="noopener">
+            <img src="images/new-g_ito_ittoito277.jpeg" alt="糸糸">
+          </a>
+          <div class="name">糸糸</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Nemo_s0221" target="_blank" rel="noopener">
+            <img src="images/new-g_nemo_s0221.jpeg" alt="汐音ねも(しおんねも)">
+          </a>
+          <div class="name">汐音ねも(しおんねも)</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/Ryn0s_K" target="_blank" rel="noopener">
+            <img src="images/new-g_ryn0s_k.jpeg" alt="Ryn0s_K">
+          </a>
+          <div class="name">Ryn0s_K</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/sou_streamer" target="_blank" rel="noopener">
+            <img src="images/new-g_sou_streamer.jpeg" alt="sou">
+          </a>
+          <div class="name">sou</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/tukishiromika" target="_blank" rel="noopener">
+            <img src="images/new-g_tukishiromika.jpeg" alt="月白ミカ">
+          </a>
+          <div class="name">月白ミカ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/KanatoNyamu" target="_blank" rel="noopener">
+            <img src="images/new-g_kanatonyamu.jpeg" alt="叶音にゃむ">
+          </a>
+          <div class="name">叶音にゃむ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/_hiwori_" target="_blank" rel="noopener">
+            <img src="images/new-g__hiwori_.jpeg" alt="をぴまる。">
+          </a>
+          <div class="name">をぴまる。</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="http://x.com/Shirokoma_Ele" target="_blank" rel="noopener">
+            <img src="images/new-g_shirokoma_ele.jpeg" alt="白狛エレ">
+          </a>
+          <div class="name">白狛エレ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="http://x.com/kurokino_oruka" target="_blank" rel="noopener">
+            <img src="images/new-g_kurokino_oruka.jpeg" alt="黒城乃オルカ">
+          </a>
+          <div class="name">黒城乃オルカ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/akizuki_noa" target="_blank" rel="noopener">
+            <img src="images/new-g_akizuki_noa.jpeg" alt="秋月のあ">
+          </a>
+          <div class="name">秋月のあ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+
+        <div class="new-g-card reveal">
+          <a href="https://x.com/_aRIa_0812" target="_blank" rel="noopener">
+            <img src="images/new-g__aria_0812.jpeg" alt="碧紫乃ありあ">
+          </a>
+          <div class="name">碧紫乃ありあ</div>
+          <div class="sns"><svg><use href="#icon-x"></use></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">
+    <img src="images/logo_wordmark_white.png" alt="Exotic Zone" class="footer-logo-img">
+  </div>
+  <nav class="footer-nav">
+    <a href="index.html">TOP</a>
+    <a href="about.html">ABOUT</a>
+    <a href="streamer.html">STREAMER</a>
+    <a href="news.html">NEWS</a>
+    <a href="company.html">COMPANY</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="footer-sns">
+    <a href="https://x.com/OfficialEXZO" target="_blank" rel="noopener" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+    <a href="https://discord.gg/JAXs8eR8" target="_blank" rel="noopener" aria-label="Discord"><svg><use href="#icon-discord"></use></svg></a>
+    <a href="https://www.tiktok.com/@official_exzo" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#icon-tiktok"></use></svg></a>
+  </div>
+  <div class="footer-meta">
+    <p>運営会社：<a href="company.html">PPP STUDIO</a></p>
+    <p>© Exotic Zone</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
